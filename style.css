@@ -124,6 +124,8 @@ nav {
     border-radius: 10px;
     gap: 20px;
     align-items: center;
+    z-index: 2;
+    transition: 0.5s left ease-in-out;
     
     button {
         width: 100%;
@@ -155,11 +157,12 @@ textarea:focus {
 }
 
 .mascara-formulario {
+    visibility: hidden;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
     height: 100vh;
     width: 100vw;
+    transition: 0.5s visibility ease-in-out;
 }
