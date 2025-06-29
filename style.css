@@ -1,5 +1,53 @@
-img {
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mario-bros-logo {
     height: 200px;
+}
+
+.mario-luigi-logo {
+    height: 500px;
+}
+
+.main-container {
+    width: 35%;
+}
+
+.video-container {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.root-container {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+
+.mascara {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    width: 100%;
 }
 
 button {
@@ -12,4 +60,50 @@ button {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 30px;
+}
+
+button:hover {
+    opacity: 0.75;
+    transition: 0.5s ease-in-out;
+}
+
+p {
+    color: white;
+    text-align: justify;
+}
+
+.whatsapp-logo {
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.header img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+    height: 10%;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    a:hover {
+        color: red;
+        font-size: 26px;
+        transition: 0.5s ease-in-out;
+
+    }
 }
